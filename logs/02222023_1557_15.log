@@ -1,0 +1,161 @@
+[2023-02-22 15:57:16,579 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2023-02-22 15:57:26,029 ] 21 root - INFO - Exporting collection data as pandas dataframe
+[2023-02-22 15:57:26,030 ] 22 root - INFO - Reading data from database: insurance_database and collection: insurance_collection
+[2023-02-22 15:57:26,069 ] 24 root - INFO - Found columns: Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
+[2023-02-22 15:57:26,072 ] 26 root - INFO - Dropping column: _id 
+[2023-02-22 15:57:26,082 ] 28 root - INFO - Row and columns in df: (2676, 7)
+[2023-02-22 15:57:26,083 ] 27 root - INFO - Save data in feature store
+[2023-02-22 15:57:26,086 ] 33 root - INFO - Create feature store folder if not available
+[2023-02-22 15:57:26,088 ] 37 root - INFO - Save df to feature store folder
+[2023-02-22 15:57:26,110 ] 42 root - INFO - split dataset into train and test set
+[2023-02-22 15:57:26,113 ] 46 root - INFO - create dataset directory folder if not available
+[2023-02-22 15:57:26,114 ] 51 root - INFO - Save df to feature store folder
+[2023-02-22 15:57:26,132 ] 63 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_ingestion\\feature_store\\insurance.csv', train_file_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_ingestion\\dataset\\train.csv', test_file_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_ingestion\\dataset\\test.csv')
+[2023-02-22 15:57:26,134 ] 22 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,134 ] 111 root - INFO - Reading base dataframe
+[2023-02-22 15:57:26,145 ] 114 root - INFO - Replace na value in base df
+[2023-02-22 15:57:26,145 ] 116 root - INFO - Drop null values colums from base df
+[2023-02-22 15:57:26,148 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[2023-02-22 15:57:26,148 ] 48 root - INFO - Columns to drop: []
+[2023-02-22 15:57:26,149 ] 119 root - INFO - Reading train dataframe
+[2023-02-22 15:57:26,156 ] 121 root - INFO - Reading test dataframe
+[2023-02-22 15:57:26,161 ] 124 root - INFO - Drop null values colums from train df
+[2023-02-22 15:57:26,163 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[2023-02-22 15:57:26,163 ] 48 root - INFO - Columns to drop: []
+[2023-02-22 15:57:26,164 ] 126 root - INFO - Drop null values colums from test df
+[2023-02-22 15:57:26,166 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[2023-02-22 15:57:26,166 ] 48 root - INFO - Columns to drop: []
+[2023-02-22 15:57:26,170 ] 135 root - INFO - Is all required columns present in train df
+[2023-02-22 15:57:26,171 ] 137 root - INFO - Is all required columns present in test df
+[2023-02-22 15:57:26,171 ] 141 root - INFO - As all column are available in train df hence detecting data drift
+[2023-02-22 15:57:26,171 ] 89 root - INFO - Hypothesis age: float64, float64 
+[2023-02-22 15:57:26,176 ] 89 root - INFO - Hypothesis sex: object, object 
+[2023-02-22 15:57:26,180 ] 89 root - INFO - Hypothesis bmi: float64, float64 
+[2023-02-22 15:57:26,181 ] 89 root - INFO - Hypothesis children: float64, float64 
+[2023-02-22 15:57:26,182 ] 89 root - INFO - Hypothesis smoker: object, object 
+[2023-02-22 15:57:26,186 ] 89 root - INFO - Hypothesis region: object, object 
+[2023-02-22 15:57:26,193 ] 89 root - INFO - Hypothesis expenses: float64, float64 
+[2023-02-22 15:57:26,194 ] 144 root - INFO - As all column are available in test df hence detecting data drift
+[2023-02-22 15:57:26,195 ] 89 root - INFO - Hypothesis age: float64, float64 
+[2023-02-22 15:57:26,196 ] 89 root - INFO - Hypothesis sex: object, object 
+[2023-02-22 15:57:26,199 ] 89 root - INFO - Hypothesis bmi: float64, float64 
+[2023-02-22 15:57:26,200 ] 89 root - INFO - Hypothesis children: float64, float64 
+[2023-02-22 15:57:26,201 ] 89 root - INFO - Hypothesis smoker: object, object 
+[2023-02-22 15:57:26,204 ] 89 root - INFO - Hypothesis region: object, object 
+[2023-02-22 15:57:26,208 ] 89 root - INFO - Hypothesis expenses: float64, float64 
+[2023-02-22 15:57:26,210 ] 148 root - INFO - Write reprt in yaml file
+[2023-02-22 15:57:26,221 ] 153 root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_validation\\report.yaml')
+[2023-02-22 15:57:26,222 ] 27 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,280 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,288 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,288 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,292 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,293 ] 125 root - INFO - Data transformation object DataTransformationArtifact(transform_object_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_transformation\\transformer\\transformer.pkl', transformed_train_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_transformation\\transformed\\train.npz', transformed_test_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_transformation\\transformed\\test.npz', target_encoder_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_transformation\\target_encoder\\target_encoder.pkl')
+[2023-02-22 15:57:26,293 ] 19 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,293 ] 54 root - INFO - Loading train and test array.
+[2023-02-22 15:57:26,352 ] 58 root - INFO - Splitting input and target feature from both train and test arr.
+[2023-02-22 15:57:26,352 ] 62 root - INFO - Train the model
+[2023-02-22 15:57:26,438 ] 65 root - INFO - Calculating f1 train score
+[2023-02-22 15:57:26,441 ] 69 root - INFO - Calculating f1 test score
+[2023-02-22 15:57:26,442 ] 73 root - INFO - train score:0.7500499424314393 and tests score 0.7527421286058633
+[2023-02-22 15:57:26,442 ] 75 root - INFO - Checking if our model is underfitting or not
+[2023-02-22 15:57:26,442 ] 80 root - INFO - Checking if our model is overfiiting or not
+[2023-02-22 15:57:26,442 ] 87 root - INFO - Saving mode object
+[2023-02-22 15:57:26,442 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,447 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,448 ] 91 root - INFO - Prepare the artifact
+[2023-02-22 15:57:26,448 ] 94 root - INFO - Model trainer artifact: ModelTrainerArtifact(model_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\model_trainer\\model\\model.pkl', r2_train_score=0.7500499424314393, r2_test_score=0.7527421286058633)
+[2023-02-22 15:57:26,448 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,449 ] 36 root - INFO - if saved model folder has model the we will compare which model is best trained or the model from saved model folder
+[2023-02-22 15:57:26,450 ] 42 root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=True, improved_accuracy=None)
+[2023-02-22 15:57:26,450 ] 15 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,451 ] 26 root - INFO - Loading transformer model and target encoder
+[2023-02-22 15:57:26,454 ] 32 root - INFO - Saving model into model pusher directory
+[2023-02-22 15:57:26,455 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,463 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,463 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,468 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,468 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,473 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,473 ] 39 root - INFO - Saving model in saved model dir
+[2023-02-22 15:57:26,474 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,480 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,480 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,484 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,484 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,488 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,489 ] 50 root - INFO - Model pusher artifact: ModelPusherArtifact(pusher_model_dir='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\model_pusher\\saved_models', saved_model_dir='saved_models')
+[2023-02-22 15:57:26,490 ] 21 root - INFO - Exporting collection data as pandas dataframe
+[2023-02-22 15:57:26,490 ] 22 root - INFO - Reading data from database: insurance_database and collection: insurance_collection
+[2023-02-22 15:57:26,522 ] 24 root - INFO - Found columns: Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
+[2023-02-22 15:57:26,522 ] 26 root - INFO - Dropping column: _id 
+[2023-02-22 15:57:26,525 ] 28 root - INFO - Row and columns in df: (2676, 7)
+[2023-02-22 15:57:26,525 ] 27 root - INFO - Save data in feature store
+[2023-02-22 15:57:26,527 ] 33 root - INFO - Create feature store folder if not available
+[2023-02-22 15:57:26,528 ] 37 root - INFO - Save df to feature store folder
+[2023-02-22 15:57:26,554 ] 42 root - INFO - split dataset into train and test set
+[2023-02-22 15:57:26,557 ] 46 root - INFO - create dataset directory folder if not available
+[2023-02-22 15:57:26,558 ] 51 root - INFO - Save df to feature store folder
+[2023-02-22 15:57:26,588 ] 63 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_ingestion\\feature_store\\insurance.csv', train_file_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_ingestion\\dataset\\train.csv', test_file_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_ingestion\\dataset\\test.csv')
+[2023-02-22 15:57:26,590 ] 22 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,591 ] 111 root - INFO - Reading base dataframe
+[2023-02-22 15:57:26,601 ] 114 root - INFO - Replace na value in base df
+[2023-02-22 15:57:26,601 ] 116 root - INFO - Drop null values colums from base df
+[2023-02-22 15:57:26,604 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[2023-02-22 15:57:26,605 ] 48 root - INFO - Columns to drop: []
+[2023-02-22 15:57:26,607 ] 119 root - INFO - Reading train dataframe
+[2023-02-22 15:57:26,618 ] 121 root - INFO - Reading test dataframe
+[2023-02-22 15:57:26,625 ] 124 root - INFO - Drop null values colums from train df
+[2023-02-22 15:57:26,631 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[2023-02-22 15:57:26,632 ] 48 root - INFO - Columns to drop: []
+[2023-02-22 15:57:26,638 ] 126 root - INFO - Drop null values colums from test df
+[2023-02-22 15:57:26,642 ] 45 root - INFO - selecting column name which contains null above to 0.2
+[2023-02-22 15:57:26,643 ] 48 root - INFO - Columns to drop: []
+[2023-02-22 15:57:26,658 ] 135 root - INFO - Is all required columns present in train df
+[2023-02-22 15:57:26,659 ] 137 root - INFO - Is all required columns present in test df
+[2023-02-22 15:57:26,659 ] 141 root - INFO - As all column are available in train df hence detecting data drift
+[2023-02-22 15:57:26,659 ] 89 root - INFO - Hypothesis age: float64, float64 
+[2023-02-22 15:57:26,662 ] 89 root - INFO - Hypothesis sex: object, object 
+[2023-02-22 15:57:26,669 ] 89 root - INFO - Hypothesis bmi: float64, float64 
+[2023-02-22 15:57:26,671 ] 89 root - INFO - Hypothesis children: float64, float64 
+[2023-02-22 15:57:26,673 ] 89 root - INFO - Hypothesis smoker: object, object 
+[2023-02-22 15:57:26,678 ] 89 root - INFO - Hypothesis region: object, object 
+[2023-02-22 15:57:26,684 ] 89 root - INFO - Hypothesis expenses: float64, float64 
+[2023-02-22 15:57:26,686 ] 144 root - INFO - As all column are available in test df hence detecting data drift
+[2023-02-22 15:57:26,687 ] 89 root - INFO - Hypothesis age: float64, float64 
+[2023-02-22 15:57:26,689 ] 89 root - INFO - Hypothesis sex: object, object 
+[2023-02-22 15:57:26,696 ] 89 root - INFO - Hypothesis bmi: float64, float64 
+[2023-02-22 15:57:26,698 ] 89 root - INFO - Hypothesis children: float64, float64 
+[2023-02-22 15:57:26,699 ] 89 root - INFO - Hypothesis smoker: object, object 
+[2023-02-22 15:57:26,702 ] 89 root - INFO - Hypothesis region: object, object 
+[2023-02-22 15:57:26,707 ] 89 root - INFO - Hypothesis expenses: float64, float64 
+[2023-02-22 15:57:26,709 ] 148 root - INFO - Write reprt in yaml file
+[2023-02-22 15:57:26,726 ] 153 root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_validation\\report.yaml')
+[2023-02-22 15:57:26,727 ] 27 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,838 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,846 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,846 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,851 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,852 ] 125 root - INFO - Data transformation object DataTransformationArtifact(transform_object_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_transformation\\transformer\\transformer.pkl', transformed_train_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_transformation\\transformed\\train.npz', transformed_test_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_transformation\\transformed\\test.npz', target_encoder_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\data_transformation\\target_encoder\\target_encoder.pkl')
+[2023-02-22 15:57:26,852 ] 19 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,853 ] 54 root - INFO - Loading train and test array.
+[2023-02-22 15:57:26,856 ] 58 root - INFO - Splitting input and target feature from both train and test arr.
+[2023-02-22 15:57:26,856 ] 62 root - INFO - Train the model
+[2023-02-22 15:57:26,866 ] 65 root - INFO - Calculating f1 train score
+[2023-02-22 15:57:26,868 ] 69 root - INFO - Calculating f1 test score
+[2023-02-22 15:57:26,870 ] 73 root - INFO - train score:0.7510213467678093 and tests score 0.7486262048789425
+[2023-02-22 15:57:26,871 ] 75 root - INFO - Checking if our model is underfitting or not
+[2023-02-22 15:57:26,871 ] 80 root - INFO - Checking if our model is overfiiting or not
+[2023-02-22 15:57:26,871 ] 87 root - INFO - Saving mode object
+[2023-02-22 15:57:26,871 ] 60 root - INFO - Entered the save_object method of utils
+[2023-02-22 15:57:26,878 ] 64 root - INFO - Exited the save_object method of utils
+[2023-02-22 15:57:26,878 ] 91 root - INFO - Prepare the artifact
+[2023-02-22 15:57:26,878 ] 94 root - INFO - Model trainer artifact: ModelTrainerArtifact(model_path='C:\\Users\\prvzs\\OneDrive\\Desktop\\insurance\\artifact\\02222023__155726\\model_trainer\\model\\model.pkl', r2_train_score=0.7510213467678093, r2_test_score=0.7486262048789425)
+[2023-02-22 15:57:26,879 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-02-22 15:57:26,879 ] 36 root - INFO - if saved model folder has model the we will compare which model is best trained or the model from saved model folder
+[2023-02-22 15:57:26,880 ] 47 root - INFO - Finding location of transformer model and target encoder
+[2023-02-22 15:57:26,882 ] 52 root - INFO - Previous trained objects of transformer, model and target encoder
+[2023-02-22 15:57:26,886 ] 59 root - INFO - Currently trained model objects
+[2023-02-22 15:57:26,929 ] 84 root - INFO - Accuracy using previous trained model: 0.7503881248297037
+[2023-02-22 15:57:26,947 ] 95 root - INFO - Accuracy using current trained model: 0.7486262048789425
+[2023-02-22 15:57:26,947 ] 97 root - INFO - Current trained model is not better than previous model

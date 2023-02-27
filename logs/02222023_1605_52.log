@@ -1,0 +1,2 @@
+[2023-02-22 16:05:53,901 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[2023-02-22 16:05:59,281 ] 30 root - INFO - Loading model to make prediction

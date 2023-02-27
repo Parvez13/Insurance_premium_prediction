@@ -1,0 +1,8 @@
+pymongo
+pandas
+PyYAML
+scikit-learn
+dill
+xgboost
+numpy
+streamlit
