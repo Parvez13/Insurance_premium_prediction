@@ -42,5 +42,3 @@ def start_batch_prediction(input_file_path):
     except Exception as e:
         raise InsuranceException(e, sys)
 
-    except Exception as e:
-        raise InsuranceException(error_message=e, error_detail=sys)
