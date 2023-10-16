@@ -12,3 +12,7 @@ The purposes of this exercise to look into different features to observe their r
 
 App Link 👇:
 https://parvez13-insurance-premium-prediction-app-n7op86.streamlit.app/
+
+
+https://github.com/Parvez13/Insurance_premium_prediction/assets/66157611/b15cc437-a2c1-4b06-8def-59d0334d14d6
+
